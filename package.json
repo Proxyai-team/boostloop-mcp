@@ -1,0 +1,21 @@
+{
+  "name": "boostloop-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BoostLoop MCP server (stateless Streamable HTTP). Proxies the BoostLoop API with the member's MCP token.",
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": { "node": ">=22.18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5"
+  }
+}
